@@ -1,0 +1,20 @@
+let items = [
+    { Name: "💨 Air", Recipe: [], Default: true },
+    { Name: "💧 Water", Recipe: [], Default: true },
+    { Name: "🌍 Earth", Recipe: [], Default: true },
+    { Name: "🔥 Fire", Recipe: [], Default: true },
+    { Name: "💥 Powder", Recipe: [["Fire", "Water"]] },
+    { Name: "🌧️ Rain", Recipe: [["Air", "Water"]] },
+    { Name: "🌑 Stone", Recipe: [["Earth", "Fire"]] },
+    { Name: "💨 Steam", Recipe: [["Water", "Fire"]] },
+    { Name: "🏞️ Mud", Recipe: [["Earth", "Water"]] },
+    { Name: "⚡ Lightning", Recipe: [["Air", "Fire"]] },
+    { Name: "🌪️ Storm", Recipe: [["Air", "Water", "Fire"]] },
+    { Name: "🏜️ Quicksand", Recipe: [["Earth", "Water", "Air"]] },
+    { Name: "🌪️ Tornado", Recipe: [["Air", "Air", "Fire"]] },
+    { Name: "🌋 Lava", Recipe: [["Earth", "Fire", "Water"]] },
+    { Name: "🌫️ Fog", Recipe: [["Air", "Water", "Water"]] },
+    { Name: "🌋 Volcano", Recipe: [["Earth", "Fire", "Air"]] },
+    { Name: "❄️ Avalanche", Recipe: [["Snow", "Rock"]] },
+    
+]

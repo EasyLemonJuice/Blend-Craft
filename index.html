@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Craft</title>
+    <link href="styles.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <h1 class="title">Blend Craft</h1>
+    <div class="board"></div>
+    <div class="stars"></div>
+    <div class="items">
+        <div class="item"></div>
+    </div>
+    <div class = "actions">
+        <img id = "clear" class = "action" src = "Bin.png"></img>
+        <img id = "restart" class = "action" src = "Restart.png"></img>
+    </div>
+    <input class = "search" placeholder="Search for item"></input>
+
+    <audio id="new">
+        <source src="new.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="connect">
+        <source src="connect.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="fail">
+        <source src="fail.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+   
+
+    <script src="items.js"></script>
+    <script src="java.js"></script>
+    <script src="stars.js"></script>
+</body>
+
+</html>
