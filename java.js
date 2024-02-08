@@ -14,12 +14,16 @@ function initializeAudioContext() {
 }
 
 function playAudio(source) {
-  initializeAudioContext()
-  if (audioContext) {
-      const audioSource = audioContext.createMediaElementSource(source);
-      audioSource.connect(audioContext.destination);
-      source.play();
-  }
+    if (audioContext) {
+        // Disconnect the existing MediaElementSourceNode, if any
+        if (mediaElementSourceNode) {
+            mediaElementSourceNode.disconnect();
+        }
+
+        mediaElementSourceNode = audioContext.createMediaElementSource(source);
+        mediaElementSourceNode.connect(audioContext.destination);
+        source.play();
+    }
 }
 
 let itemElement = itemHolder.cloneNode(true);
